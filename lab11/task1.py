@@ -28,11 +28,18 @@ try:
         year_fmt = f"{year} [YR{year}]"
         ukraine_stat, usa_stat = [r[year_fmt] for r in reader]
 
-        writer.writerow({'Year':year, "Country with greater growth":("Ukraine" if ukraine_stat >= usa_stat else "USA")})
+        writer.writerow(
+            {
+                "Year": year,
+                "Country with greater growth": (
+                    "Ukraine" if ukraine_stat >= usa_stat else "USA"
+                ),
+            }
+        )
 
     csv_file.close()
     csv_file_w.close()
-    
+
 except Exception as e:
     print(f"Failed to open {filename}: {e}")
 print("done!")

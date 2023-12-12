@@ -11,12 +11,11 @@ while True:
         continue
     break
 
-if a>b:
-    X = b/a + 61
-elif a==b:
+if a > b:
+    X = b / a + 61
+elif a == b:
     X = -5
-else: 
-    X = (b-a)/b
+else:
+    X = (b - a) / b
 
 print("X =", X)
-

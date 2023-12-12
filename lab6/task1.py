@@ -7,4 +7,5 @@ def insert_at_even():
         arr[idx] = int(input(f"Введіть елемент, індекс {idx}: "))
     print("Новий список", arr)
 
+
 insert_at_even()

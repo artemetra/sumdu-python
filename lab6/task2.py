@@ -5,5 +5,6 @@ def swap_even_odd():
         new_arr.append(o)
         new_arr.append(e)
     print("Новий список:", " ".join(new_arr))
-    
+
+
 swap_even_odd()
