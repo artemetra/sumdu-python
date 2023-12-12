@@ -163,3 +163,5 @@ cython_debug/
 TF1*
 lab11_result.csv
 .DS_Store
+data.json
+data2.json
