@@ -11,6 +11,11 @@ fixed_df = pd.read_csv(
     dayfirst=True,
     index_col="Date",
 )
+fixed_df = fixed_df.drop(fixed_df.columns[[0]], axis=1)
 print(fixed_df[:3])
 fixed_df.plot(figsize=(15, 10))
+plt.show()
+agg_df = fixed_df.T.agg("sum").T
+sum_over_months = agg_df.groupby(agg_df.index.month).sum()
+sum_over_months.plot(figsize=(15, 10))
 plt.show()
