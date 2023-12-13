@@ -160,8 +160,15 @@ cython_debug/
 #.idea/
 
 # ==============
-TF1*
-lab11_result.csv
 .DS_Store
+
+# lab9
+TF1*
+# lab11
+lab11_result.csv
+# lab12
 data.json
 data2.json
+# lab16
+melville-moby_dick.txt
+result.txt
