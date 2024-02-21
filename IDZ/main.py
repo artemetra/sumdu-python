@@ -2,6 +2,7 @@ from fpdf import FPDF
 from dataclasses import dataclass
 import os
 
+
 @dataclass
 class CVData:
     personal_info: dict
@@ -177,7 +178,7 @@ def create_cv_data() -> CVData:
         add_more = input("Add another soft skill? (y/n): ")
         if add_more.lower() != "y":
             break
-    
+
     while True:
         cv_data.image_path = input("Enter image path: ")
         if os.path.exists(cv_data.image_path):
